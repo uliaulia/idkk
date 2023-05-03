@@ -1,0 +1,763 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+   
+
+.header{
+    
+    min-height: 10vh;
+background: #ffffff;
+}
+.icon{
+    position: absolute;
+width: 194.96px;
+height: 39px;
+left: 68px;
+top: 23px;
+}
+.golovna{
+    position: absolute;
+width: 135.81px;
+height: 34.92px;
+left: 452px;
+top: 23px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+text-decoration: none;
+color: black;
+}
+.friends{
+    position: absolute;
+width: 103.99px;
+height: 31.04px;
+left: 600px;
+top: 23px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+text-decoration: none;
+color: #000000;
+
+}
+.servis{
+    position: absolute;
+width: 129.6px;
+height: 38.8px;
+left: 716px;
+top: 23px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+text-decoration: none;
+color: #000000;
+}
+.contact{
+    position: absolute;
+width: 150.55px;
+height: 34.92px;
+left: 858px;
+top: 23px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+text-decoration: none;
+color: #000000;
+}
+.suma{
+    position: absolute;
+width: 210.98px;
+height: 80.17px;
+left: 1250px;
+top: 23px;
+}
+.fullscreen{
+    background: #000;
+    display: flex;
+    min-height: 90vh;
+    padding: 0px;
+}
+.new_friends{
+    position: absolute;
+width: 415.68px;
+height: 35.41px;
+left: 104.77px;
+top: 160.67px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+
+color: #FFFFFF;
+}
+.text{
+    position: absolute;
+width: 437px;
+height: 311px;
+left: 105px;
+top: 330px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 32px;
+
+color: #FFFFFF;
+
+}
+.text1{
+    position: absolute;
+width: 392px;
+height: 130px;
+left: 105px;
+top: 440px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 32px;
+
+color: #FFFFFF;
+}
+.consult{
+    box-sizing: border-box;
+
+position: absolute;
+width: 243px;
+height: 85px;
+left: 94px;
+top: 609px;
+
+background: linear-gradient(247.92deg, #FFD600 -2.68%, #FDB600 78.01%);
+border-radius: 50px;
+
+}
+.parrot{
+    position: absolute;
+    position: absolute;
+width: 636px;
+height: 919px;
+left: 746px;
+top: 115px;
+    
+   
+}
+.consult_text{
+   font-family: monospace;
+
+   font-size: 25px;
+    color: #000;
+}
+.osnova{
+    position: absolute;
+   max-width: 100%;
+    max-height: 100vh;  
+      top: 936px;
+    display: flex;
+    background: #000;
+    border-radius: 0px;
+    
+}
+.block1{
+    position: absolute;
+width: 500px;
+height: 600px;
+left: 105px;
+top: 935px;
+margin: 0px;
+
+background: #D9D9D9;
+border-radius: 50px;
+}
+.parrot1_1{
+    position: absolute;
+    width: 600px;
+    height: 700px;
+left: 105px;
+top: 835px;
+border-radius: 50px;
+}
+.shadow1{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    left: 105px;
+    top: 400px;
+
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.481) 54.48%, rgba(0, 0, 0, 0.65) 100%);
+border-radius: 0px 0px 50px 50px;
+}
+.parrott{
+    position: absolute;
+width: 296px;
+height: 104px;
+left: 310px;
+top: 495px;
+
+background: #000000;
+border-radius: 50px 0px;
+}
+.obratu{
+    position: absolute;
+left: 368px;
+top: 530px;
+width: 216.61px;
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 32px;
+
+color: #FFFFFF;
+}
+.h1{
+    position: absolute;
+width: 552px;
+height: 51px;
+left: 772.29px;
+top: 100px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.hp1{
+    position: absolute;
+width: 551px;
+height: 367px;
+left: 779.29px;
+top: 300px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 32px;
+
+color: #000000;
+}
+.hp2{
+    position: absolute;
+    width: 551px;
+    
+    left: 779.29px;
+    top: 450px;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #000000;
+}
+.osnova2{
+    position: absolute;
+min-width: 100%;
+min-height: 80vh;
+top: 1891px;
+display: flex;
+background: linear-gradient(180deg, #FFFFFF 0%, #D6D4CE 100%);
+border-radius: 0px;
+}
+.block2{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    left: 105px;
+top: 1835px;
+
+background: #D9D9D9;
+border-radius: 50px;
+}
+.chamel{
+    position: absolute;
+ 
+    left: 105px;
+top: 1825px;
+
+}
+.shadow2{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    left: 105px;
+    top: 2235px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.481) 54.48%, rgba(0, 0, 0, 0.65) 100%);
+border-radius: 0px 0px 50px 50px;
+}
+.obratu2{
+    position: absolute;
+    width: 296px;
+    height: 104px;
+    left: 309px;
+    top: 2330px;
+    
+    background: #000000;
+    border-radius: 50px 0px;
+}
+.rept{
+    position: absolute;
+    left: 365px;
+    top: 2365px;
+    width: 216.61px;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #FFFFFF;
+}
+.h2{
+    position: absolute;
+width: 545px;
+height: 86px;
+left: 772.29px;
+top: 1950px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+
+color: #000000;
+}
+.hp3{
+    position: absolute;
+width: 494px;
+height: 298px;
+left: 772.29px;
+top: 2150px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 32px;
+
+color: #000000;
+}
+.hp4{
+    position: absolute;
+    width: 494px;
+    height: 298px;
+    left: 772.29px;
+    top: 2300px;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #000000;
+}
+.osnova3{
+    position: absolute;
+min-width: 100%;
+min-height: 75vh;
+top: 2844px;
+display: flex;
+background: linear-gradient(180deg, #FFFFFF 0%, #D6D4CE 100%);
+border-radius: 0px;
+}
+.block3{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    left: 105px;
+top: 2700px;
+background: #D9D9D9;
+border-radius: 50px;
+}
+.cat{
+    position: absolute;
+    width: 500px;
+    height: 650px;
+    left: 105px;
+top: 2655px;
+
+
+}
+.shadow3{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    left: 105px;
+    top: 3100px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.481) 54.48%, rgba(0, 0, 0, 0.65) 100%);
+border-radius: 0px 0px 50px 50px;
+}
+.obratu3{
+    position: absolute;
+    width: 296px;
+    height: 104px;
+    left: 309px;
+    top: 3195px;
+    
+    background: #000000;
+    border-radius: 50px 0px;
+}
+.cot{
+    position: absolute;
+    left: 365px;
+    top: 3225px;
+    width: 216.61px;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #FFFFFF; 
+}
+.h3{
+    position: absolute;
+width: 551px;
+height: 367px;
+left: 779.29px;
+top: 2800px;
+
+font-family: monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+
+color: #000000;
+
+}
+.hp5{
+    position: absolute;
+    width: 545px;
+    height: 86px;
+    left: 772.29px;
+    top: 2950px;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #000000;
+}
+.hp6{
+    
+    position: absolute;
+    width: 545px;
+    height: 86px;
+    left: 772.29px;
+    top: 3190px;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #000000;  
+}
+.osnova4{
+    position: absolute;
+min-width: 100%;
+min-height:75vh;
+top: 3800px;
+display: flex;
+background: linear-gradient(180deg, #FFFFFF 0%, #D6D4CE 100%);
+border-radius: 0px;
+}
+.block4{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    left: 105px;
+top: 3700px;
+background: #D9D9D9;
+border-radius: 50px; 
+}
+.hamster{
+    position: absolute;
+    width: 650px;
+    height: 700px;
+    left: 55px;
+top: 3600px;
+}
+.shadow4{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    left: 105px;
+    top: 4100px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.481) 54.48%, rgba(0, 0, 0, 0.65) 100%);
+border-radius: 0px 0px 50px 50px;
+}
+.obratu4{
+    position: absolute;
+    width: 296px;
+    height: 104px;
+    left: 309px;
+    top: 4195px;
+    
+    background: #000000;
+    border-radius: 50px 0px;
+}
+.hamsterr{
+    position: absolute;
+    left: 365px;
+    top: 4230px;
+    width: 216.61px;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #FFFFFF; 
+}
+.hp7{
+    position: absolute;
+    width: 551px;
+    height: 367px;
+    left: 779.29px;
+    top: 3800px;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    
+    color: #000000;
+}
+.hp8{
+    position: absolute;
+    width: 545px;
+    height: 86px;
+    left: 772.29px;
+    top: 3950px;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #000000;
+}
+.hp9{
+    position: absolute;
+    width: 545px;
+    height: 86px;
+    left: 772.29px;
+    top: 4150px;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #000000;
+}
+.osnova5{
+    position: absolute;
+    min-width: 100%;
+    min-height:75vh;
+    top: 4700px;
+    display: flex;
+    background: linear-gradient(180deg, #FFFFFF 0%, #D6D4CE 100%);
+    border-radius: 0px;
+}
+.block5{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    left: 105px;
+top: 4600px;
+background: #D9D9D9;
+border-radius: 50px;   
+}
+.fish{
+    position: absolute;
+    width: 650px;
+    height: 700px;
+    left: 105px;
+top: 4505px; 
+}
+.shadow5{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    left: 105px;
+    top: 5000px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.481) 54.48%, rgba(0, 0, 0, 0.65) 100%);
+border-radius: 0px 0px 50px 50px;
+}
+.obratu5{
+    position: absolute;
+    width: 296px;
+    height: 104px;
+    left: 309px;
+    top: 5095px;
+    
+    background: #000000;
+    border-radius: 50px 0px;
+}
+.fishh{
+    position: absolute;
+    left: 365px;
+    top: 5130px;
+    width: 216.61px;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #FFFFFF;    
+}
+.ffishh{
+    position: absolute;
+    width: 551px;
+    height: 367px;
+    left: 779.29px;
+    top: 4700px;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    
+    color: #000000;
+}
+.hp10{
+    position: absolute;
+    width: 545px;
+    height: 86px;
+    left: 772.29px;
+    top: 4850px;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #000000;
+}
+.hp11{
+    position: absolute;
+    width: 545px;
+    height: 86px;
+    left: 772.29px;
+    top: 5000px;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #000000;
+}
